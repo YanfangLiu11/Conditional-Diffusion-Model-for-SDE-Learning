@@ -357,7 +357,7 @@ optimizer = optim.Adam(FN.parameters(), lr = learning_rate, weight_decay=1e-6)
 criterion = nn.MSELoss()
 
 best_valid_err = 5.0
-n_iter = 4000
+n_iter = 2000
 for j in range(n_iter):
     optimizer.zero_grad()
     pred = FN(xTrain_normal)
